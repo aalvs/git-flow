@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
@@ -34,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt" >
-      <body className={`font-sans antialiased ${_geist.className} ${_geistMono.className}`}>
+    <html lang="pt" className="dark translated-ltr" suppressHydrationWarning>
+      <body className={`${_geist.className} ${_geistMono.className} font-sans antialiased `}>
         {children}
         <Analytics />
       </body>

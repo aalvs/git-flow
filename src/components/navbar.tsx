@@ -28,7 +28,7 @@ export function Navbar() {
         {/* Logo */}
         <a
           href="#"
-          className="flex items-center gap-2 font-mono font-bold text-foreground hover:text-primary transition-colors"
+          className="flex items-center gap-2 font-sans font-bold text-foreground hover:text-primary transition-colors"
         >
           <motion.span
             animate={{ rotate: [0, 15, -10, 0] }}
@@ -49,7 +49,7 @@ export function Navbar() {
             <motion.a
               key={item.href}
               href={item.href}
-              className="px-3 py-1.5 text-xs font-mono text-muted-foreground hover:text-foreground hover:bg-muted rounded-md transition-colors"
+              className="px-3 py-1.5 text-xs font-sans text-muted-foreground hover:text-foreground hover:bg-muted rounded-md transition-colors"
               initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.1 + i * 0.06 }}
@@ -109,7 +109,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="px-3 py-2 text-sm font-mono text-muted-foreground hover:text-foreground hover:bg-muted rounded-md transition-colors"
+                  className="px-3 py-2 text-sm font-sans text-muted-foreground hover:text-foreground hover:bg-muted rounded-md transition-colors"
                   initial={{ x: -16, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: i * 0.05 }}

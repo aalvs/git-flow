@@ -48,7 +48,7 @@ export default function Page() {
       >
         <div className="max-w-4xl mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2 text-sm font-mono">
+            <div className="flex items-center gap-2 text-sm font-sans">
               <GitBranch className="size-4 text-primary" />
               <span className="text-muted-foreground">
                 Inspirado no{" "}
@@ -64,7 +64,7 @@ export default function Page() {
                 de Daniel Kummer
               </span>
             </div>
-            <div className="flex items-center gap-4 text-xs font-mono text-muted-foreground">
+            <div className="flex items-center gap-4 text-xs font-sans text-muted-foreground">
               <a
                 href="https://github.com/nvie/gitflow"
                 target="_blank"

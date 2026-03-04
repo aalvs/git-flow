@@ -79,7 +79,7 @@ export function InstallSection() {
               key={p.id}
               onClick={() => setPlatform(p.id)}
               className={cn(
-                "relative flex items-center gap-2 px-4 py-2 rounded-md text-sm font-mono transition-colors",
+                "relative flex items-center gap-2 px-4 py-2 rounded-md text-sm font-sans transition-colors",
                 platform === p.id ? "text-foreground" : "text-muted-foreground hover:text-foreground",
               )}
             >
@@ -117,7 +117,7 @@ export function InstallSection() {
               transition={{ delay: i * 0.08 }}
             >
               <div className="px-4 py-2.5 border-b border-border bg-muted">
-                <span className="text-xs font-mono text-muted-foreground">{group.title}</span>
+                <span className="text-xs font-sans text-muted-foreground">{group.title}</span>
               </div>
               <div className="divide-y divide-border">
                 {group.commands.map((item, j) => (
@@ -131,7 +131,7 @@ export function InstallSection() {
 
       <AnimatedSection delay={0.2} className="mt-6">
         <div className="p-4 rounded-lg border border-border bg-muted">
-          <p className="text-xs font-mono text-muted-foreground">
+          <p className="text-xs font-sans text-muted-foreground">
             Para instruções detalhadas de instalação, consulte a{" "}
             <a
               href="https://github.com/petervanderdoes/gitflow-avh/wiki/Installation"

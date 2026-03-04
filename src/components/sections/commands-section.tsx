@@ -88,8 +88,8 @@ function CommandGroup({
     >
       <div className="px-5 py-3 border-b border-border bg-muted flex items-center gap-2">
         <span className={`w-2 h-2 rounded-full ${group.dotColor}`} />
-        <h3 className={`text-sm font-bold font-mono ${group.color}`}>{group.title}</h3>
-        <span className="ml-auto text-xs font-mono text-muted-foreground">{group.commands.length} comandos</span>
+        <h3 className={`text-sm font-bold font-sans ${group.color}`}>{group.title}</h3>
+        <span className="ml-auto text-xs font-sans text-muted-foreground">{group.commands.length} comandos</span>
       </div>
       <motion.div
         className="divide-y divide-border"

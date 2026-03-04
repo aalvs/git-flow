@@ -77,7 +77,7 @@ export function CommandBlock({ command, description, className, variant = "defau
         />
         <code
           className={cn(
-            "flex-1 font-mono text-sm tracking-tight",
+            "flex-1 font-sans text-sm tracking-tight",
             variant === "primary" ? "text-primary" : "text-foreground",
           )}
         >

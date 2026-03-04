@@ -25,7 +25,7 @@ export function HotfixesSection() {
 
       <AnimatedSection delay={0.1}>
         <div className="mb-8 rounded-xl border border-border bg-card p-4">
-          <p className="text-xs font-mono text-muted-foreground mb-3 uppercase tracking-wider">Diagrama do Workflow</p>
+          <p className="text-xs font-sans text-muted-foreground mb-3 uppercase tracking-wider">Diagrama do Workflow</p>
           <BranchDiagram type="hotfix" />
         </div>
       </AnimatedSection>
@@ -72,17 +72,17 @@ export function HotfixesSection() {
           <div className="grid sm:grid-cols-2 gap-2 mt-2 text-xs text-muted-foreground leading-relaxed">
             <div className="space-y-1">
               <p>
-                Mescla <code className="text-red-400 font-mono">hotfix/1.0.1</code> →{" "}
-                <code className="text-green-400 font-mono">main</code>
+                Mescla <code className="text-red-400 font-sans">hotfix/1.0.1</code> →{" "}
+                <code className="text-green-400 font-sans">main</code>
               </p>
               <p>
-                Cria tag <code className="text-green-400 font-mono">1.0.1</code> no main
+                Cria tag <code className="text-green-400 font-sans">1.0.1</code> no main
               </p>
             </div>
             <div className="space-y-1">
               <p>
-                Mescla <code className="text-red-400 font-mono">hotfix/1.0.1</code> →{" "}
-                <code className="text-blue-400 font-mono">develop</code>
+                Mescla <code className="text-red-400 font-sans">hotfix/1.0.1</code> →{" "}
+                <code className="text-blue-400 font-sans">develop</code>
               </p>
               <p>Remove o branch de hotfix</p>
             </div>
@@ -92,7 +92,7 @@ export function HotfixesSection() {
 
       <AnimatedSection delay={0.2} className="mt-4">
         <div className="p-4 rounded-lg border border-red-400/20 bg-red-400/5">
-          <p className="text-xs font-mono text-red-300">
+          <p className="text-xs font-sans text-red-300">
             <span className="font-bold">Atenção:</span> Se uma release branch existe quando o hotfix é finalizado, ele
             é mesclado nela em vez do develop. O back-merge ao develop ocorre quando a release terminar.
           </p>

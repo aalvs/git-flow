@@ -36,7 +36,7 @@ export function GettingStartedSection() {
       <div className="grid md:grid-cols-2 gap-6">
         <AnimatedSection direction="left" delay={0.1}>
           <div className="space-y-4">
-            <h3 className="text-sm font-bold font-mono text-blue-400">Inicialização</h3>
+            <h3 className="text-sm font-bold font-sans text-blue-400">Inicialização</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Comece o uso do git-flow inicializando dentro de um repositório git existente. Você precisará responder
               algumas questões sobre convenções de nomenclatura dos branches.
@@ -55,10 +55,10 @@ export function GettingStartedSection() {
 
         <AnimatedSection direction="right" delay={0.2}>
           <div className="space-y-4">
-            <h3 className="text-sm font-bold font-mono text-blue-400">Estrutura de Branches Criada</h3>
+            <h3 className="text-sm font-bold font-sans text-blue-400">Estrutura de Branches Criada</h3>
             <div
               ref={prefixRef}
-              className="rounded-xl border border-border bg-card p-4 font-mono text-xs space-y-2"
+              className="rounded-xl border border-border bg-card p-4 font-sans text-xs space-y-2"
             >
               {branchEntries.map((b, i) => (
                 <motion.div
@@ -100,7 +100,7 @@ export function GettingStartedSection() {
 
       <AnimatedSection delay={0.3} className="mt-6">
         <div className="p-4 rounded-lg border border-blue-400/20 bg-blue-400/5">
-          <p className="text-xs font-mono text-blue-300 leading-relaxed">
+          <p className="text-xs font-sans text-blue-300 leading-relaxed">
             <strong>Recomendação:</strong> Use os valores padrão durante a inicialização. A convenção padrão (
             {'"feature/", "release/", "hotfix/"'}) é amplamente reconhecida pela comunidade e facilita a colaboração.
           </p>

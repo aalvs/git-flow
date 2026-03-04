@@ -26,7 +26,7 @@ export function HeroSection() {
         </motion.div>
 
         <motion.h1
-          className="text-4xl md:text-5xl font-bold font-mono tracking-tight text-balance text-foreground mb-4"
+          className="text-4xl md:text-5xl font-bold font-sans tracking-tight text-balance text-foreground mb-4"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.1, ease: [0.25, 0.4, 0.25, 1] }}
@@ -62,10 +62,10 @@ export function HeroSection() {
         transition={{ duration: 0.6, delay: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
       >
         <div className="flex items-center justify-between mb-4 flex-wrap gap-3">
-          <p className="text-xs font-mono text-muted-foreground uppercase tracking-wider">
+          <p className="text-xs font-sans text-muted-foreground uppercase tracking-wider">
             Visão Geral — Modelo de Branches
           </p>
-          <div className="flex items-center gap-3 text-xs font-mono flex-wrap">
+          <div className="flex items-center gap-3 text-xs font-sans flex-wrap">
             {[
               { color: "bg-green-400", label: "main" },
               { color: "bg-blue-400", label: "develop" },
@@ -110,8 +110,8 @@ export function HeroSection() {
             whileHover={{ y: -4, borderColor: "var(--primary)" }}
             transition={{ duration: 0.2 }}
           >
-            <div className="text-2xl font-bold font-mono text-primary mb-1">{fact.value}</div>
-            <div className="text-xs font-mono text-foreground font-semibold">{fact.label}</div>
+            <div className="text-2xl font-bold font-sans text-primary mb-1">{fact.value}</div>
+            <div className="text-xs font-sans text-foreground font-semibold">{fact.label}</div>
             <div className="text-xs text-muted-foreground mt-0.5">{fact.sub}</div>
           </motion.div>
         ))}

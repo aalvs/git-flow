@@ -25,7 +25,7 @@ export function ReleasesSection() {
 
       <AnimatedSection delay={0.1}>
         <div className="mb-8 rounded-xl border border-border bg-card p-4">
-          <p className="text-xs font-mono text-muted-foreground mb-3 uppercase tracking-wider">Diagrama do Workflow</p>
+          <p className="text-xs font-sans text-muted-foreground mb-3 uppercase tracking-wider">Diagrama do Workflow</p>
           <BranchDiagram type="release" />
         </div>
       </AnimatedSection>
@@ -76,15 +76,15 @@ export function ReleasesSection() {
           <div className="grid sm:grid-cols-2 gap-2 mt-2 text-xs text-muted-foreground leading-relaxed">
             <div className="space-y-1">
               <p>
-                Mescla <code className="text-purple-400 font-mono">release/1.0.0</code> →{" "}
-                <code className="text-green-400 font-mono">main</code>
+                Mescla <code className="text-purple-400 font-sans">release/1.0.0</code> →{" "}
+                <code className="text-green-400 font-sans">main</code>
               </p>
               <p>Etiqueta (tag) a versão com seu nome</p>
             </div>
             <div className="space-y-1">
               <p>
-                Mescla <code className="text-purple-400 font-mono">release/1.0.0</code> →{" "}
-                <code className="text-blue-400 font-mono">develop</code>
+                Mescla <code className="text-purple-400 font-sans">release/1.0.0</code> →{" "}
+                <code className="text-blue-400 font-sans">develop</code>
               </p>
               <p>Remove o branch de release</p>
             </div>
@@ -94,7 +94,7 @@ export function ReleasesSection() {
 
       <AnimatedSection delay={0.2} className="mt-4">
         <div className="p-4 rounded-lg border border-purple-400/20 bg-purple-400/5">
-          <p className="text-xs font-mono text-purple-300">
+          <p className="text-xs font-sans text-purple-300">
             <span className="font-bold">Dica:</span> Não se esqueça de publicar as tags com{" "}
             <code className="bg-muted px-1.5 py-0.5 rounded">git push --tags</code> após finalizar a release.
           </p>

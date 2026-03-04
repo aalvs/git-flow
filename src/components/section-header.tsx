@@ -37,7 +37,7 @@ export function SectionHeader({ id, icon, title, subtitle, color = "text-primary
       </motion.div>
       <div>
         <motion.h2
-          className={cn("text-2xl font-bold font-mono tracking-tight text-balance", color)}
+          className={cn("text-2xl font-bold font-sans tracking-tight text-balance", color)}
           initial={{ opacity: 0, y: 10 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
           transition={{ duration: 0.4, delay: 0.15 }}

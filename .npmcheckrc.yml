@@ -1,0 +1,14 @@
+# .npmcheckrc
+
+depcheck:
+  ignoreMatches:
+    [
+      "postcss",
+      "autoprefixer",
+      "typescript",
+      "@types/node",
+      "tailwindcss",
+      "tw-animate-css",
+      "@hookform/resolvers",
+      "@tailwindcss/postcss",
+    ]

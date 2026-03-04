@@ -33,7 +33,7 @@ export function StepCard({ step, title, children, color = "border-primary/30", c
       <div className="shrink-0">
         <motion.div
           className={cn(
-            "w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold font-mono bg-muted border",
+            "w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold font-sans bg-muted border",
             color,
           )}
           initial={{ scale: 0.6, opacity: 0 }}
@@ -44,7 +44,7 @@ export function StepCard({ step, title, children, color = "border-primary/30", c
         </motion.div>
       </div>
       <div className="flex-1 min-w-0">
-        <h4 className="font-semibold text-foreground mb-2 text-sm font-mono">{title}</h4>
+        <h4 className="font-semibold text-foreground mb-2 text-sm font-sans">{title}</h4>
         <div className="space-y-2">{children}</div>
       </div>
     </motion.div>
